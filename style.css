@@ -10,62 +10,75 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: antiquewhite;
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.navbar  {
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;  
-    flex-direction: flex-start;
-    margin-top: 20px;
+}
+.navbar img {
+    object-fit: cover;
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px
 }
 
 .navbar a {
     text-decoration: none;
-    padding: 25px;
-    color: #111A1C;
-    font-weight: 500;
-    font-size: 16px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: bold;
     margin-right: 20px;
-    margin-left: 20px;
-    transition: all 0.3s ease-in-out;
 }
 
-.navbar a:hover {
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 600;
-    transition: all 0.3s ease-in-out;
-}
-
-.landingpage {
-    margin-top: 200px;
-    margin-right: 75px;
-    align-items: right;
-    text-align: right;
-    color:#111A1C;
-    font-size: 65px;
-    font-family: "Caveat Brush", cursive, sans-serif;
-}
-
-.landingpage > p {
-    padding: 100px;
-    margin-left: 75px;
-    margin-top: 100px;
-    background-color: wheat;
+.sign-in-navbar {
     display: flex;
-    flex-direction: flex-start;
-    text-align: center;
+    gap: 20px;
     align-items: center;
-    font-size: 34px;
 }
 
-    
+.sign-in-navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins' sans-serif;
+}
+
+.sign-in-navbar button {
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    background: white;
+    transition: 0.3s all ease-in-out;
+    color: black;
+    font-weight: 400;
+    font-family: 'Poppins' sans-serif;
+}
+
+.sign-in-navbar button a  {
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    background: white;
+    transition: 0.3s all ease-in-out;
+    color: black;
+    font-weight: 400;
+    font-family: 'Poppins' sans-serif;
+}
+
