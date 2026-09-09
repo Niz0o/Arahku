@@ -26,6 +26,7 @@ header {
     background-color: transparent;  
     flex-direction: flex-start;
     margin-top: 20px;
+    box-shadow: 0px 4px 20px #111A1C;
 }
 
 .navbar a {
